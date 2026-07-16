@@ -49,9 +49,27 @@ const PROJECTS = [
 ];
 
 const CERTS = [
-  { title: "MongoDB Basics for Students", issuer: "MongoDB · Credly", date: "Jul 2026" },
-  { title: "Gemini Certified Student", issuer: "Google for Education", date: "May 2026 — May 2029" },
-  { title: "Excellence in HTML, CSS & JS", issuer: "thingQbator (NASSCOM Foundation & Cisco CSR)", date: "Jul 2026" },
+  {
+    title: "MongoDB Basics for Students",
+    issuer: "MongoDB · Credly",
+    date: "Jul 2026",
+    link: "https://www.credly.com/badges/35f08e91-22c7-4d1e-9108-3aac1bfc3b15/public_url",
+    linkLabel: "Verify on Credly",
+  },
+  {
+    title: "Gemini Certified Student",
+    issuer: "Google for Education",
+    date: "May 2026 — May 2029",
+    link: "https://edu.google.accredible.com/b5bd6f68-1583-4593-a672-06635aaed7f1#acc.xmvoi39R",
+    linkLabel: "Verify on Google",
+  },
+  {
+    title: "Excellence in HTML, CSS & JS",
+    issuer: "thingQbator (NASSCOM Foundation & Cisco CSR)",
+    date: "Jul 2026",
+    link: "https://thingqbator.nasscomfoundation.org/home/certificate/IcwKPMADVe05WPwL",
+    linkLabel: "Verify on thingQbator",
+  },
 ];
 
 function Portfolio() {
@@ -308,7 +326,7 @@ function Portfolio() {
                 </div>
               </div>
               <div>
-                <div className="font-display text-4xl text-ember">02</div>
+                <div className="font-display text-4xl text-ember">03</div>
                 <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground mt-2">
                   Certifications
                 </div>
@@ -351,20 +369,26 @@ function Portfolio() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {CERTS.map((c) => (
-              <div
+              <a
                 key={c.title}
-                className="border border-border rounded-lg p-8 hover:border-ember transition-colors group"
+                href={c.link}
+                target="_blank"
+                rel="noreferrer"
+                className="block border border-border rounded-lg p-8 hover:border-ember transition-colors group"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-display text-2xl leading-tight mb-2">{c.title}</h3>
                     <p className="text-sm text-muted-foreground">{c.issuer}</p>
+                    <span className="inline-flex items-center gap-1 mt-4 text-sm text-ember group-hover:text-ember-glow transition">
+                      {c.linkLabel} <span aria-hidden>→</span>
+                    </span>
                   </div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ember whitespace-nowrap">
                     {c.date}
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
