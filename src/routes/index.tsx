@@ -32,6 +32,8 @@ const PROJECTS = [
     image: analyticsImg,
     body: "An interactive Power BI dashboard powered by a SQL backend and Excel-cleaned data — visualizing subject-wise performance, pass/fail rates, and cohort trends with 100% data integrity from source to insight.",
     stack: ["Power BI", "SQL", "Excel"],
+    link: "https://drive.google.com/file/d/1Rj9ZhmMsurNuP6huEmqBFfTDpwLWrF7b/view?usp=sharing",
+    linkLabel: "View on Drive",
   },
   {
     n: "02",
@@ -42,6 +44,7 @@ const PROJECTS = [
     body: "Two interactive games — Mini Computer Game and Dual Game — shipped end-to-end. Real-time scoring, responsive layouts, and zero-install browser playback deployed via GitHub Pages.",
     stack: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/kunalrawatt09",
+    linkLabel: "View on GitHub",
   },
 ];
 
@@ -257,7 +260,7 @@ function Portfolio() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 text-sm text-ember hover:text-ember-glow transition"
                   >
-                    View on GitHub <span aria-hidden>→</span>
+                    {p.linkLabel || "View project"} <span aria-hidden>→</span>
                   </a>
                 )}
               </div>
