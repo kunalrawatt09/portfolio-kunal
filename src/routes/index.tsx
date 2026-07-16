@@ -49,9 +49,27 @@ const PROJECTS = [
 ];
 
 const CERTS = [
-  { title: "MongoDB Basics for Students", issuer: "MongoDB · Credly", date: "Jul 2026" },
-  { title: "Gemini Certified Student", issuer: "Google for Education", date: "May 2026 — May 2029" },
-  { title: "Excellence in HTML, CSS & JS", issuer: "thingQbator (NASSCOM Foundation & Cisco CSR)", date: "Jul 2026" },
+  {
+    title: "MongoDB Basics for Students",
+    issuer: "MongoDB · Credly",
+    date: "Jul 2026",
+    link: "https://www.credly.com/badges/35f08e91-22c7-4d1e-9108-3aac1bfc3b15/public_url",
+    linkLabel: "Verify on Credly",
+  },
+  {
+    title: "Gemini Certified Student",
+    issuer: "Google for Education",
+    date: "May 2026 — May 2029",
+    link: "https://edu.google.accredible.com/b5bd6f68-1583-4593-a672-06635aaed7f1#acc.xmvoi39R",
+    linkLabel: "Verify on Google",
+  },
+  {
+    title: "Excellence in HTML, CSS & JS",
+    issuer: "thingQbator (NASSCOM Foundation & Cisco CSR)",
+    date: "Jul 2026",
+    link: "https://thingqbator.nasscomfoundation.org/home/certificate/IcwKPMADVe05WPwL",
+    linkLabel: "Verify on thingQbator",
+  },
 ];
 
 function Portfolio() {
