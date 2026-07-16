@@ -369,20 +369,26 @@ function Portfolio() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {CERTS.map((c) => (
-              <div
+              <a
                 key={c.title}
-                className="border border-border rounded-lg p-8 hover:border-ember transition-colors group"
+                href={c.link}
+                target="_blank"
+                rel="noreferrer"
+                className="block border border-border rounded-lg p-8 hover:border-ember transition-colors group"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h3 className="font-display text-2xl leading-tight mb-2">{c.title}</h3>
                     <p className="text-sm text-muted-foreground">{c.issuer}</p>
+                    <span className="inline-flex items-center gap-1 mt-4 text-sm text-ember group-hover:text-ember-glow transition">
+                      {c.linkLabel} <span aria-hidden>→</span>
+                    </span>
                   </div>
                   <span className="font-mono text-xs uppercase tracking-widest text-ember whitespace-nowrap">
                     {c.date}
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
