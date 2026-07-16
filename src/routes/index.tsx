@@ -326,7 +326,7 @@ function Portfolio() {
                 </div>
               </div>
               <div>
-                <div className="font-display text-4xl text-ember">02</div>
+                <div className="font-display text-4xl text-ember">03</div>
                 <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground mt-2">
                   Certifications
                 </div>
