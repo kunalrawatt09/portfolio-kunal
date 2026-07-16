@@ -32,6 +32,7 @@ const PROJECTS = [
     image: analyticsImg,
     body: "An interactive Power BI dashboard powered by a SQL backend and Excel-cleaned data — visualizing subject-wise performance, pass/fail rates, and cohort trends with 100% data integrity from source to insight.",
     stack: ["Power BI", "SQL", "Excel"],
+    link: "https://drive.google.com/file/d/1Rj9ZhmMsurNuP6huEmqBFfTDpwLWrF7b/view?usp=sharing",
   },
   {
     n: "02",
