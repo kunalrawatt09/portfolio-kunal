@@ -51,6 +51,7 @@ const PROJECTS = [
 const CERTS = [
   { title: "MongoDB Basics for Students", issuer: "MongoDB · Credly", date: "Jul 2026" },
   { title: "Gemini Certified Student", issuer: "Google for Education", date: "May 2026 — May 2029" },
+  { title: "Excellence in HTML, CSS & JS", issuer: "thingQbator (NASSCOM Foundation & Cisco CSR)", date: "Jul 2026" },
 ];
 
 function Portfolio() {
