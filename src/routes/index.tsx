@@ -72,7 +72,7 @@ function Portfolio() {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-ink/70 border-b border-border">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-4">
           <a href="#top" className="font-display text-lg tracking-tight">
-            Kunal<span className="text-ember">.</span>
+            Kunal
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm">
             {NAV.map((n, i) => (
@@ -117,7 +117,7 @@ function Portfolio() {
           >
             Kunal
             <br />
-            <span className="italic text-ember">Rawat.</span>
+            <span className="italic text-ember">Rawat</span>
           </h1>
 
           <div className="mt-10 grid md:grid-cols-12 gap-8 items-end">
