@@ -84,14 +84,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Portfolio of Kunal Rawat — BCA student and data analytics enthusiast building Power BI dashboards, SQL systems, and responsive web experiences.",
       },
       { name: "author", content: "Kunal Rawat" },
-      { property: "og:title", content: "Kunal Rawat — Data & Web Portfolio" },
+      { property: "og:title", content: "Kunal Rawat — Data Analytics & Web Developer Portfolio" },
       {
         property: "og:description",
         content:
-          "Data analytics dashboards, SQL systems, and interactive web builds by Kunal Rawat.",
+          "Portfolio of Kunal Rawat — BCA student and data analytics enthusiast building Power BI dashboards, SQL systems, and responsive web experiences.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Kunal Rawat — Data Analytics & Web Developer Portfolio" },
+      { name: "twitter:description", content: "Portfolio of Kunal Rawat — BCA student and data analytics enthusiast building Power BI dashboards, SQL systems, and responsive web experiences." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3f4608c6-b5b2-4afb-b1b0-eefc94f23896/id-preview-0efe6997--98cea473-0dae-4643-a66c-e835041ddc60.lovable.app-1784183601614.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3f4608c6-b5b2-4afb-b1b0-eefc94f23896/id-preview-0efe6997--98cea473-0dae-4643-a66c-e835041ddc60.lovable.app-1784183601614.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
