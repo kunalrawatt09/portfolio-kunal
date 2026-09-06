@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import heroImg from "@/assets/hero.jpg";
 import analyticsImg from "@/assets/project-analytics.jpg";
-import gamesImg from "@/assets/project-games.jpg";
+import ecommerceImg from "@/assets/project-ecommerce.jpg";
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
@@ -16,16 +16,27 @@ const NAV = [
 ];
 
 const SKILLS = [
-  { group: "Data", items: ["Power BI", "SQL", "Microsoft Excel"] },
-  { group: "Languages", items: ["Java", "C", "JavaScript"] },
+  { group: "Data Analytics", items: ["Microsoft Excel", "Power BI", "SQL", "NumPy", "Pandas"] },
+  { group: "Programming", items: ["C", "Java", "JavaScript", "Python"] },
+  { group: "Core Concepts", items: ["DBMS", "OOP", "Data Structures"] },
+  { group: "Tools & Platforms", items: ["Git", "GitHub"] },
   { group: "Web", items: ["HTML", "CSS", "JavaScript"] },
-  { group: "Foundations", items: ["DBMS", "OOP", "Data Structures"] },
-  { group: "Tools", items: ["Git", "GitHub"] },
 ];
 
 const PROJECTS = [
   {
     n: "01",
+    title: "E-commerce Analytics Dashboard",
+    kicker: "Data · Analytics · Power BI",
+    year: "2026",
+    image: ecommerceImg,
+    body: "Built a four-page interactive Power BI dashboard covering sales metrics, customer insights, marketing performance, and logistics anomaly reporting. Sourced raw e-commerce data from Kaggle, cleaned it with Python (NumPy, Pandas) to keep only delivered orders, and stored it in MySQL for on-demand order lookup — engineered with a persistent nav menu for a zero-scrolling experience.",
+    stack: ["Power BI", "MySQL", "Python"],
+    link: "https://drive.google.com/file/d/1IZjrPsFGg-vbjTkEMoGWQxMAgwxlSO2C/view?usp=sharing",
+    linkLabel: "View on Drive",
+  },
+  {
+    n: "02",
     title: "Student Result Management System",
     kicker: "Data · Analytics · SQL",
     year: "2026",
@@ -34,17 +45,6 @@ const PROJECTS = [
     stack: ["Power BI", "SQL", "Excel"],
     link: "https://drive.google.com/file/d/1Rj9ZhmMsurNuP6huEmqBFfTDpwLWrF7b/view?usp=sharing",
     linkLabel: "View on Drive",
-  },
-  {
-    n: "02",
-    title: "Browser-Based Mini Games Platform",
-    kicker: "Interaction · Web · Play",
-    year: "2025",
-    image: gamesImg,
-    body: "Two interactive games — Mini Computer Game and Dual Game — shipped end-to-end. Real-time scoring, responsive layouts, and zero-install browser playback deployed via GitHub Pages.",
-    stack: ["HTML", "CSS", "JavaScript"],
-    link: "https://github.com/kunalrawatt09",
-    linkLabel: "View on GitHub",
   },
 ];
 
@@ -198,12 +198,14 @@ function Portfolio() {
                 "Power BI",
                 "SQL",
                 "JavaScript",
-                "Data Storytelling",
+                "Python",
+                "NumPy",
+                "Pandas",
                 "Java",
                 "Excel",
-                "Curiosity",
-                "GitHub",
+                "Data Storytelling",
                 "Problem Solving",
+                "GitHub",
               ].map((w) => (
                 <span key={w} className="flex items-center gap-16">
                   <span className="text-parchment">{w}</span>
