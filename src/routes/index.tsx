@@ -16,11 +16,11 @@ const NAV = [
 ];
 
 const SKILLS = [
-  { group: "Data", items: ["Power BI", "SQL", "Microsoft Excel"] },
-  { group: "Languages", items: ["Java", "C", "JavaScript"] },
+  { group: "Data Analytics", items: ["Microsoft Excel", "Power BI", "SQL", "NumPy", "Pandas"] },
+  { group: "Programming", items: ["C", "Java", "JavaScript", "Python"] },
+  { group: "Core Concepts", items: ["DBMS", "OOP", "Data Structures"] },
+  { group: "Tools & Platforms", items: ["Git", "GitHub"] },
   { group: "Web", items: ["HTML", "CSS", "JavaScript"] },
-  { group: "Foundations", items: ["DBMS", "OOP", "Data Structures"] },
-  { group: "Tools", items: ["Git", "GitHub"] },
 ];
 
 const PROJECTS = [
@@ -198,12 +198,14 @@ function Portfolio() {
                 "Power BI",
                 "SQL",
                 "JavaScript",
-                "Data Storytelling",
+                "Python",
+                "NumPy",
+                "Pandas",
                 "Java",
                 "Excel",
-                "Curiosity",
-                "GitHub",
+                "Data Storytelling",
                 "Problem Solving",
+                "GitHub",
               ].map((w) => (
                 <span key={w} className="flex items-center gap-16">
                   <span className="text-parchment">{w}</span>
