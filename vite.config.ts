@@ -1,17 +1,5 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig({
-  // GitHub Pages serves the site from a subfolder, so set the Vite base path.
-  vite: {
-    base: "/portfolio-kunal/",
-  },
-  tanstackStart: {
-    server: {
-      entry: "server",
-      preset: "github-pages",
-      prerender: {
-        routes: ["/"]
-      }
-    },
-  },
-});
+// No `base` path: the site is served from the domain root on Vercel.
+// No hosting preset either — the build target is auto-detected.
+export default defineConfig({});
