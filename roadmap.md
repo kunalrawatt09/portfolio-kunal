@@ -1,1 +1,1 @@
-- [ ] Redesign the portfolio in a handcrafted Swiss editorial direction
+- [x] Redesign the portfolio in a handcrafted Swiss editorial direction
