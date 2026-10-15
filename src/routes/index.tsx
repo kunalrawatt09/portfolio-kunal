@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/portrait.jpg";
 import analyticsImg from "@/assets/project-analytics.jpg";
 import ecommerceImg from "@/assets/project-ecommerce.jpg";
 
@@ -151,7 +151,7 @@ function Portfolio() {
           </div>
 
           <figure className="col-span-8 relative h-[32vh] min-h-56 overflow-hidden border border-foreground md:col-span-12 md:h-[38vh]">
-            <img src={heroImg} alt="Kunal Rawat, data analyst and developer" className="h-full w-full object-cover object-[center_38%] grayscale contrast-110" />
+            <img src={heroImg} alt="Kunal Rawat, data analyst and developer" loading="lazy" width={1600} height={1008} className="h-full w-full object-cover object-[74%_28%]" />
             <figcaption className="absolute bottom-0 left-0 border-r border-t border-foreground bg-background px-3 py-2 text-xs uppercase">
               Portrait / No. 01
             </figcaption>
