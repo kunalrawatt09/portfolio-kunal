@@ -152,9 +152,6 @@ function Portfolio() {
 
           <figure className="col-span-8 relative h-[32vh] min-h-56 overflow-hidden border border-foreground md:col-span-12 md:h-[38vh]">
             <img src={heroImg} alt="Kunal Rawat, data analyst and developer" loading="lazy" width={1264} height={722} className="h-full w-full object-cover object-[76%_18%]" />
-            <figcaption className="absolute bottom-0 left-0 border-r border-t border-foreground bg-background px-3 py-2 text-xs uppercase">
-              Portrait / No. 01
-            </figcaption>
           </figure>
         </section>
 
